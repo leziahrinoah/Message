@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <section id="home">
+
+      <h1>Happy Teachers' Month!</h1>
+
+      <p class="emoji">💗</p>
+
+      <p>A message for this wonderful teacher</p>
+
+      <img src="img.jpg">
+
+      <audio controls loop>
+        <source src="withasmile.mp3" type="audio/mpeg">
+      </audio>
+
+      <button onclick="showMessage(true)">Open Your Message</button>
+    
+    </section>
+
+    <section id="message" hidden>
+
+      <h1>Dear Ma'am </h1>
+
+      <p class="teacher-message">
+        Happy Teachers’ Day, Ma’am Gwen! 🌷💗
+        I want to take this opportunity to let you know
+        how grateful I am for everything you’ve done for me.
+        Even though you aren’t my professor this academic year,
+        you’re still one of the reasons I believe I can get through it.
+        Being chosen by you as one of the participants in the quiz bee
+        meant the world to me. 🥹🏅
+      </p>
+
+      <p class="teacher-message">
+        I’m a bit disappointed that I haven’t been as active in KAF
+        as I used to be, but I’ll definitely make sure to be there
+        for our upcoming event. 🙌💛
+      </p>
+
+      <p class="teacher-message">
+        Thank you for being such a beautiful person inside and out,
+        and for always standing by our side to guide and protect us. 🫶
+        Wishing you the happiest Teachers’ Day, Ma’am!
+        You deserve all the appreciation you receive. 💐✨
+      </p>
+
+      <h3>Sincerely, Leziah Rinoah Cachuela😉</h3>
+
+      <button onclick="showMessage(false)">Back</button>
+    
+    </section>
+  </main>
+  <script>
+
+    function showMessage(open) {
+      document.getElementById("home").hidden = open;
+      document.getElementById("message").hidden = !open;
+    }
+
+  </script>
+</body>
+</html>
